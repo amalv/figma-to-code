@@ -46,3 +46,9 @@ To run the tests, use:
 ```sh
 bun run test
 ```
+
+## Storybook
+
+To start Storybook, run:
+
+bun run storybook

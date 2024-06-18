@@ -17,16 +17,24 @@ import {
 	CardLink,
 } from "./Card.styles";
 
-export const Card = () => (
+interface CardProps {
+	imageUrl: string;
+	title: string;
+	description: string;
+	href: string;
+}
+export const Card: React.FC<CardProps> = ({
+	imageUrl,
+	title,
+	description,
+	href = "#",
+}) => (
 	<CardContainer>
-		<CardContent href="#">
-			<CardImage src="https://picsum.photos/200" alt="Placeholder" />
+		<CardContent href={href}>
+			<CardImage src={imageUrl} alt={title} />
 			<CardTextContent>
-				<CardTitle>An Above Average Experience</CardTitle>
-				<CardDescription>
-					Travel to thegg premiere mountain tops of New Zealand with our guided
-					tours. Take in the majestic scenary and witness beauty.
-				</CardDescription>
+				<CardTitle>{title}</CardTitle>
+				<CardDescription>{description}</CardDescription>
 				<CardLink src={Link} alt="External Link Icon" />
 			</CardTextContent>
 		</CardContent>

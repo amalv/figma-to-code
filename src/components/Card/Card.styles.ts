@@ -24,6 +24,7 @@ export const CardContent = styled.a`
   text-decoration: none;
   @media only screen and (min-width: 550px) {
   	display: flex;
+    align-items: flex-end;
   }
 `;
 
