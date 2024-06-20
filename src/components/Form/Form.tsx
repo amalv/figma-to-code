@@ -9,6 +9,7 @@ import {
 	Button,
 	Title,
 	Description,
+	FormContent,
 } from "./Form.styles";
 
 export const Form: React.FC = () => (
@@ -22,7 +23,7 @@ export const Form: React.FC = () => (
 			</Content>
 		</LeftCol>
 		<RightCol>
-			<Content>
+			<FormContent>
 				<InputWrapper>
 					<Label htmlFor="name">Name</Label>
 					<Input type="text" id="name" />
@@ -34,7 +35,7 @@ export const Form: React.FC = () => (
 				<InputWrapper>
 					<Button>Sign me up</Button>
 				</InputWrapper>
-			</Content>
+			</FormContent>
 		</RightCol>
 	</Container>
 );
