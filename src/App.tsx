@@ -1,7 +1,7 @@
-import { Form } from "./components/Form/Form";
+import { Dashboard } from "./components/Dashboard/Dashboard";
 
 function App() {
-	return <Form />;
+	return <Dashboard />;
 }
 
 export default App;
